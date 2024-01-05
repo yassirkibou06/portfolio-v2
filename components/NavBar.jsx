@@ -1,5 +1,5 @@
 "use client"
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Dialog, Transition } from '@headlessui/react';
@@ -7,10 +7,14 @@ import { IoIosClose, IoIosMenu } from "react-icons/io";
 
 
 const NavBar = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false);
+
+    const handleClose = () => {
+        setOpen(!open);
+    }
 
     return (
-        <div className="px-5 md:px-10 mt-5 flex items-center justify-between">
+        <motion.div className="px-5 md:px-10 mt-5 flex items-center justify-between">
             <motion.div
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.1 } }}>
@@ -46,7 +50,7 @@ const NavBar = () => {
             {/*responsive mobile */}
             <IoIosMenu onClick={() => setOpen(true)} className="p-1 w-10 h-10 cursor-pointer bg-white rounded-full mt-2 md:hidden" />
             <Transition.Root show={open} as={Fragment}>
-                <Dialog as="div" className="relative block md:hidden z-[999]" onClose={setOpen}>
+                <Dialog as="div" className="relative block z-[999]" onClose={handleClose}>
                     <Transition.Child
                         as={Fragment}
                         enter="ease-in-out duration-500"
@@ -85,7 +89,7 @@ const NavBar = () => {
                                                 <button
                                                     type="button"
                                                     className="relative rounded-md text-gray-600 hover:text-black focus:outline-none"
-                                                    onClick={() => setOpen(false)}
+                                                    onClick={handleClose}
                                                 >
                                                     <span className="absolute -inset-2.5" />
                                                     <IoIosClose className="h-10 w-10" aria-hidden="true" />
@@ -94,11 +98,11 @@ const NavBar = () => {
                                         </Transition.Child>
                                         <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl ">
                                             <ul className="flex flex-col items-center space-y-16 mt-16">
-                                                <li><Link className="text-nav-mb" href="/">Home</Link></li>
-                                                <li><Link className="text-nav-mb" href="/about">About</Link></li>
-                                                <li><Link className="text-nav-mb" href="/work">Work</Link></li>
-                                                <li><Link className="text-nav-mb" href="/freelancer">Freelancer</Link></li>
-                                                <li><Link className="text-nav-mb" href="/contact">Contact</Link></li>
+                                                <li onClick={handleClose}><Link className="text-nav-mb" href="/">Home</Link></li>
+                                                <li onClick={handleClose}><Link className="text-nav-mb" href="/about">About</Link></li>
+                                                <li onClick={handleClose}><Link className="text-nav-mb" href="/work">Work</Link></li>
+                                                <li onClick={handleClose}><Link className="text-nav-mb" href="/freelancer">Freelancer</Link></li>
+                                                <li onClick={handleClose}><Link className="text-nav-mb" href="/contact">Contact</Link></li>
                                             </ul>
 
                                         </div>
@@ -109,7 +113,7 @@ const NavBar = () => {
                     </div>
                 </Dialog>
             </Transition.Root>
-        </div>
+        </motion.div>
     )
 }
 

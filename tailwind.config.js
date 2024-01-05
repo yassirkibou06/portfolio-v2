@@ -18,9 +18,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         "hero": '650px 250px 250px',
+        "cards": '1fr 280px',
+        "contact": '1fr 400px',
       },
       gridTemplateRows: {
-        "hero": '340px 130px',
+        "hero": '340px 130px'
       }
     },
   },
