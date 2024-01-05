@@ -99,8 +99,8 @@ const page = () => {
             </motion.div>
             {/*content*/}
             <motion.p
-                initail={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.7 } }}
+                initail={{ opacity: 0, y: -500 }}
+                animate={{ opacity: 1,y: 2, transition: { duration: 1 } }}
                 exit={{ opacity: 0, transition: { duration: 0.7 } }}
                 className="font-medium tracking-wider leading-7 w-[80%] md:w-[60%] ml-10 md:ml-16 pt-96 md:pt-56">
                 👋 I am Yassir, a dedicated Front-end developer with a passion for crafting exceptional digital experiences.

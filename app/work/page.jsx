@@ -72,7 +72,7 @@ const page = () => {
       ]
     }
   ]
-  
+
   return (
     <motion.div className="relative mb-10">
       <motion.div
@@ -85,7 +85,13 @@ const page = () => {
       {/* Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-32 px-10 md:px-16">
         {data.map((item, index) => (
-          <div key={index} className="shadow-lg bg-white grid-cols-1 grid md:grid-cols-cards gap-5 py-2 px-3 rounded-xl">
+          /* cards */
+          <motion.div key={index}
+            initial={{ opacity: 0, x: -500, transition: { duration: 1 } }}
+            animate={index === 0 ? { opacity: 1, x: 0, transition: { duration: 1 } }
+              : index === 1 ? { opacity: 1, x: 0, transition: { duration: 1.2 } }
+                : index === 2 ? { opacity: 1, x: 0, transition: { duration: 1.4 } } : { opacity: 1, x: 0, transition: { duration: 1.6 } }}
+            className="shadow-lg bg-white grid-cols-1 grid md:grid-cols-cards gap-5 py-2 px-3 rounded-xl">
             <div className="left pt-5">
               <h2 className="font-semibold text-base md:text-xl mb-2">{item.name}</h2>
               <p className="text-gray-500 font-medium text-sm mb-3">
@@ -103,7 +109,7 @@ const page = () => {
                 <LuEye className="text-orange-600" />
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {/**Upcoming .... */}

@@ -37,7 +37,12 @@ const page = () => {
             {/**content */}
             <div className="pt-36 px-10 md:px-16 grid grid-rows-3 gap-6">
                 {data.map((item, index) => (
-                    <div key={index} className="bg-white rounded-2xl shadow-lg py-2 px-3 flex justify-between items-center">
+                    <motion.div key={index}
+                        initial={{ opacity: 0, x: -500, transition: { duration: 1 } }}
+                        animate={index === 0 ? { opacity: 1, x: 0, transition: { duration: 1 } }
+                            : index === 1 ? { opacity: 1, x: 0, transition: { duration: 1.2 } }
+                                : index === 2 ? { opacity: 1, x: 0, transition: { duration: 1.4 } } : { opacity: 1, x: 0, transition: { duration: 1.6 } }}
+                        className="bg-white rounded-2xl shadow-lg py-2 px-3 flex justify-between items-center">
                         <div className="flex items-center gap-5 md:gap-12">
                             <img className="w-16 h-16 rounded-full object-cover" src={item.img} alt="" />
                             <h2 className="font-semibold text-gray-500 text-base md:text-lg">Explore my profile on {item.name}</h2>
@@ -47,7 +52,7 @@ const page = () => {
                                 <MdOutlineInsertLink className="" />
                             </a>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
             {/**message */}

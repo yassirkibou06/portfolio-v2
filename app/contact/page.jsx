@@ -15,8 +15,11 @@ const page = () => {
         <motion.h2 className="text-center font-semibold text-base md:text-xl">CONTACT ME</motion.h2>
       </motion.div>
       {/**content */}
-      <div className="pt-32 px-10 md:px-16">
-        <div className="bg-white rounded-lg grid grid-cols-1 md:grid-cols-contact px-2 py-4 mb-5">
+      <motion.div className="pt-32 px-10 md:px-16">
+        <motion.div
+          initail={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1,y: 10, transition: { duration: 1 } }}
+          className="bg-white rounded-lg grid grid-cols-1 md:grid-cols-contact px-2 py-4 mb-5">
           <div>
             <img className="w-[400px] h-[400px] md:w-[450px] md:h-[450px] rounded-lg ml-0 md:ml-20" src="assets/images/i-1.jpg" alt="" />
             <div className="flex md:flex-row flex-col space-y-3 md:space-x-8 ml-5 md:ml-20">
@@ -31,8 +34,8 @@ const page = () => {
             </div>
           </div>
           <ContactForm />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   )
 }
