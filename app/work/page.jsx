@@ -10,7 +10,7 @@ const page = () => {
       name: "Landing page",
       desc: "Simple marketing landing page, I used HTML and CSS to build it.",
       link: "https://yassirkibou06.github.io/marketing-page/",
-      img: "/assets/images/p1.png",
+      img: "/assets/images/p1.jpg",
       tag: [
         {
           name: "HTML",
@@ -27,7 +27,7 @@ const page = () => {
       name: "Movie App",
       desc: "A multi-page movie website with dedicated sections for Home, TV Series, and Movies, built using React, HTML, CSS",
       link: "https://yassirkibou06.github.io/movie-app/#/",
-      img: "/assets/images/p2.png",
+      img: "/assets/images/p2.jpg",
       tag: [
         {
           name: "React"
@@ -44,7 +44,7 @@ const page = () => {
       name: "Japan Explorer",
       link: "https://yassirkibou06.github.io/japan-app/#/",
       desc: "Discover Japan's iconic cities with this React.js app. Immerse yourself in the beauty of Tokyo, Kyoto, and more. Built with React, HTML, CSS, and Swiper for seamless navigation.",
-      img: "/assets/images/p3.png",
+      img: "/assets/images/p3.jpg",
       tag: [
         {
           name: "React"
@@ -64,7 +64,7 @@ const page = () => {
       name: "Food landing page",
       desc: "Discover the essence of Arabic cuisine on this Next.js website. Tailwind CSS ensures a visually stunning presentation, while Framer Motion adds delightful animations. Explore the flavors at",
       link: "https://landing-food.vercel.app/",
-      img: "/assets/images/p4.png",
+      img: "/assets/images/p4.jpg",
       tag: [
         { name: "Next.js" },
         { name: "Tailwind CSS" },
@@ -72,6 +72,7 @@ const page = () => {
       ]
     }
   ]
+  
   return (
     <motion.div className="relative mb-10">
       <motion.div

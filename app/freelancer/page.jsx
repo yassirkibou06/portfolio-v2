@@ -16,12 +16,12 @@ const page = () => {
         {
             name: "LinkedIn",
             link: "https://www.linkedin.com/in/yassir-kibou",
-            img: "/assets/images/u2.png"
+            img: "/assets/images/u2.jpg"
         },
         {
             name: "Github",
             link: "https://github.com/yassirkibou06",
-            img: "/assets/images/u3.png"
+            img: "/assets/images/u3.jpg"
         }
     ];
 

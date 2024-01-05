@@ -23,7 +23,7 @@ const Message = () => {
                     initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5 } }}
                     className="fixed bottom-10 md:bottom-16 right-3 flex gap-2 flex-row-reverse items-center">
                     <div className="w-16 h-16 relative">
-                        <img className="rounded-full border-white border-2 object-cover" src="/assets/images/ya.png" alt="" />
+                        <img className="rounded-full border-white border-2 object-cover" src="/assets/images/ya.jpg" alt="" />
                         <span className="bg-green-500 w-3 h-3 rounded-full z-10 absolute top-1 right-1"></span>
                     </div>
                     <div className="bg-white p-2 rounded-3xl mt-5 text-center">
