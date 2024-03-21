@@ -92,10 +92,10 @@ const page = () => {
                 exit={{ opacity: 0, transition: { duration: 0.7 } }}
                 className="absolute opacity-0 -right-36 mt-2 md:mt-0"
             >
-                <div className="absolute top-24 right-16 w-56 h-56 z-[15] ">
-                    <img className="object-cover w-full h-full rounded-full " src="../../assets/images/yas.jpg" alt="" />
+                <div className="absolute top-24 right-16 w-[15rem] h-[15rem] md:w-[12rem] md:h-[29rem] z-[15] ">
+                    <img className="object-cover w-full h-full rounded-full " src="../../assets/images/yas.png" alt="" />
                 </div>
-                <div className="z-[14] absolute top-24 right-48 rounded-full bg-gray-300 w-36 h-36"></div>
+                <div className="z-[14] absolute top-24 right-48 rounded-full bg-gray-300 w-40 h-40 md:w-32 md:h-96"></div>
             </motion.div>
             {/*content*/}
             <motion.p
