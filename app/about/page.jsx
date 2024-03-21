@@ -93,7 +93,7 @@ const page = () => {
                 className="absolute opacity-0 -right-36 mt-2 md:mt-0"
             >
                 <div className="absolute top-24 right-16 w-56 h-56 z-[15] ">
-                    <img className="object-cover w-full h-full rounded-full " src="../../assets/images/ya.jpg" alt="" />
+                    <img className="object-cover w-full h-full rounded-full " src="../../assets/images/yas.jpg" alt="" />
                 </div>
                 <div className="z-[14] absolute top-24 right-48 rounded-full bg-gray-300 w-36 h-36"></div>
             </motion.div>
