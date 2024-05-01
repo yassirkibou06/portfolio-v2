@@ -158,7 +158,7 @@ const Hero = () => {
             className="bg-gray-100 border-2 flex flex-col justify-between col-span-2 border-white rounded-3xl relative overflow-hidden py-2 px-3">
                 <div className="flex justify-between items-center">
                     <span className="border text-black border-black rounded-3xl py-1 px-2 font-medium text-xs ">contact me</span>
-                    <Link href="/work" className="flex items-center justify-center w-8 h-8 bg-white hover:bg-glass rounded-full">
+                    <Link href="/contact" className="flex items-center justify-center w-8 h-8 bg-white hover:bg-glass rounded-full">
                         <MdOutlineArrowForward size={17} />
                     </Link>
                 </div>
