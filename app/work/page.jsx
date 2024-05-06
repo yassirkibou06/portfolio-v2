@@ -70,6 +70,17 @@ const page = () => {
         { name: "Tailwind CSS" },
         { name: "Framer Motion" }
       ]
+    },
+    {
+      name: "One page animtion",
+      desc: "Discover animation page with Next.js . Tailwind CSS ensures a visually stunning presentation, while Framer Motion adds delightful animations. Explore the flavors at",
+      link: "https://beats-sage.vercel.app/",
+      img: "/assets/images/p5.png",
+      tag: [
+        { name: "Next.js" },
+        { name: "Tailwind CSS" },
+        { name: "Framer Motion" }
+      ]
     }
   ]
 

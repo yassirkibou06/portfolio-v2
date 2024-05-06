@@ -22,14 +22,14 @@ const page = () => {
           className="bg-white rounded-lg grid grid-cols-1 md:grid-cols-contact px-2 py-4 mb-5">
           <div>
             <img className="w-[400px] h-[400px] md:w-[450px] md:h-[450px] rounded-lg ml-0 md:ml-20" src="assets/images/i-1.jpg" alt="" />
-            <div className="flex md:flex-row flex-col space-y-3 md:space-x-8 ml-5 md:ml-20">
-              <div className="flex items-center space-x-2">
+            <div className="flex items-center md:flex-row flex-col space-y-3 md:space-x-8 ml-5 md:ml-20">
+              <div className="flex items-center space-x-2 mt-3">
                 <MdOutlineMarkEmailUnread className="text-xl md:text-2xl text-blue-700" />
-                <p className="font-medium md:text-base text-sm text-gray-600">yassirkibou06@gmail.com</p>
+                <p className="font-medium md:text-base text-sm text-gray-600"><a href="mailto:yassirkibou06@gmail.com">yassirkibou06@gmail.com</a></p>
               </div>
               <div className="flex items-center space-x-2">
                 <MdCall className="text-xl md:text-2xl text-blue-700" />
-                <p className="font-medium md:text-base text-sm text-gray-600">+212675467067</p>
+                <p className="font-medium md:text-base text-sm text-gray-600"><a href="tel:+212675467067">+212675467067</a></p>
               </div>
             </div>
           </div>
