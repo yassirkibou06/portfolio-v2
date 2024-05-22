@@ -22,6 +22,11 @@ const page = () => {
             name: "Github",
             link: "https://github.com/yassirkibou06",
             img: "/assets/images/u3.jpg"
+        },
+        {
+            name: "Frontend Forge",
+            link: "https://www.facebook.com/profile.php?id=61559639713338",
+            img: "/assets/images/a8.png"
         }
     ];
 
