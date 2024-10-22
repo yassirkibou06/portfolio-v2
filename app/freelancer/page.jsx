@@ -24,8 +24,8 @@ const page = () => {
             img: "/assets/images/u3.jpg"
         },
         {
-            name: "Frontend Forge",
-            link: "https://www.facebook.com/profile.php?id=61559639713338",
+            name: "Instagram",
+            link: "https://www.instagram.com/yassirdev.kb/",
             img: "/assets/images/a8.png"
         }
     ];
@@ -53,7 +53,7 @@ const page = () => {
                             <h2 className="font-semibold text-gray-500 text-base md:text-lg">Explore my profile on {item.name}</h2>
                         </div>
                         <div>
-                            <a href={item.link} className="border-gray-600 border w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                            <a href={item.link} className="border-gray-600 border w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white" target="_blank">
                                 <MdOutlineInsertLink className="" />
                             </a>
                         </div>

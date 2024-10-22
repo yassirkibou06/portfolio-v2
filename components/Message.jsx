@@ -26,8 +26,8 @@ const Message = () => {
                         <img className="rounded-full border-white border-2 object-cover" src="/assets/images/a8.png" alt="" />
                         <span className="bg-green-500 w-3 h-3 rounded-full z-10 absolute top-1 right-1"></span>
                     </div>
-                    <div className="bg-white p-2 rounded-3xl mt-5 text-center">
-                        <p className="text-green-600 font-medium text-sm">Hi, I&apos;m available for hire full time.</p>
+                    <div className="bg-green-600 p-2 rounded-3xl mt-5 text-center shadow-lg">
+                        <p className="text-white font-medium text-sm ">Hi, I&apos;m available for hire full time.</p>
                     </div>
                 </motion.div>
             )}
